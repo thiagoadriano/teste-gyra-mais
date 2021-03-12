@@ -1,0 +1,16 @@
+.logo {
+    width: auto;
+    height: 60px;
+}
+.navbar {
+    background-color: var(--basic-color);
+    margin-top: -2px;
+}
+
+.close-room {
+    width: auto;
+    height: 11px;
+    margin-top: -1px;
+    margin-right: 8px;
+    filter: contrast(0) brightness(2);
+}

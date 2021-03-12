@@ -1,0 +1,17 @@
+:root {
+    --basic-color: #06577d;
+    --silver: #333;
+}
+
+.root {
+    display: flex;
+    flex-direction: column;
+}
+
+.root > * {
+    flex: 1;
+}
+
+body {
+    background-color: #f3f3f3;
+}

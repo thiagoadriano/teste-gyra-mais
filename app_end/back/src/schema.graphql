@@ -1,0 +1,55 @@
+type Room {
+  id: ID!
+  name: String
+  created_at: String
+}
+
+type User {
+  id: ID!
+  nickname: String
+  active: Boolean
+  created_at: String
+}
+
+type Message {
+  id: ID!
+  user_id: String
+  room_id: String
+  text: String
+  created_at: String
+}
+
+input RoomInput {
+  name: String
+}
+
+input UserInput {
+  nickname: String
+}
+
+input MessageInput {
+  roomId: String!
+  userId: String!
+  text: String!
+}
+
+type Query {
+  rooms: [Room]
+  room(name: String!): Room
+
+  users: [User]
+  usersSearch(search: String): [User]
+  user(nickname: String!): User
+
+  messages: [Message]
+}
+
+type Mutation {
+  createRoom(room: RoomInput): Room
+  deleteRoom(id: String): Room
+
+  createUser(user: UserInput): User
+  deleteUser(id: String): User
+
+  createMessage(message: MessageInput): Message
+}

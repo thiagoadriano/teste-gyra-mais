@@ -1,0 +1,44 @@
+.box-message {
+    width: 100%;
+    height: auto;
+}
+
+.box-message .thumb-message {
+    width: 30px;
+    height: 30px;
+    background-color: var(--basic-color);
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.box-message .thumb-message img {
+    width: auto;
+    height: 48%;
+    filter: contrast(0) brightness(2);
+    flex: 1;
+
+}
+
+.box-message .user-message,
+.box-message .time-message,
+.box-message .text-message {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    color: var(--silver);
+}
+
+.box-message .time-message,
+.box-message .text-message {
+    font-size: 11px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.box-message .text-message{
+    font-style: normal;
+}   
